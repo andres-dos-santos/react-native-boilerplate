@@ -10,7 +10,7 @@ export function P(props: PProps) {
   const { theme } = useTheme()
 
   return (
-    <Text style={[{ color: COLORS[theme].text }, props.style]}>
+    <Text style={{ color: COLORS[theme].text, ...(props.style as object) }}>
       {props.children}
     </Text>
   )
