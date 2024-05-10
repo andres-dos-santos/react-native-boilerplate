@@ -1,11 +1,15 @@
 {
   "expo": {
-    "name": "react-native-components",
-    "slug": "react-native-components",
+    "name": "react-native-boilerplate",
+    "slug": "react-native-boilerplate",
+    "scheme": "react-native-boilerplate",
     "version": "1.0.0",
     "orientation": "portrait",
+    "experiments": {
+      "typedRoutes": true
+    },
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,6 +26,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
